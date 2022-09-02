@@ -367,3 +367,13 @@ div.projeto4{
 	align-items: center;
 	justify-content: center;
 }
+
+div.projeto1 img{
+	height: 200px;
+	width: 300px;
+}
+
+#project:hover{
+	transform: scale(1.1);
+	transition: 0.5s;
+}
