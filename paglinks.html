@@ -10,28 +10,38 @@
 
 		*{
 			text-decoration: none;
+			margin: 0px;
+			padding: 0px;
 		}
 
 		body{
+			position: relative;
 			display: flex;
 			justify-content: center;
-			margin: 0;
 		}
 
 		main{
 			background-image: linear-gradient(to bottom right, #FF1B96, #8600B8, #000);
 			display: flex;
-			max-width: 76vw;
+			width: 100vw;
+			min-width: 320px;
+			max-width: 425px;
 			height: 100vh;
 			align-items: center;
 			flex-direction: column;
-			padding-bottom: 20px;
+			position: absolute;
+
+		}
+
+		nav{
+			max-width: 420px;
 		}
 
 		a{
-			width: 320px;
+			max-width: 410px;
+			min-width: 300px;
 			height: 50px;
-			margin: 20px;
+			margin: 10px;
 			border-radius: 30px;
 			cursor: pointer;
 			color: #FF1B96;
@@ -54,6 +64,11 @@
 			padding-top: 20px;
 		}
 
+		div#titulo{
+			padding: 10px;
+			margin: 5px;
+		}
+
 		h1{
 			font-family: 'Slim Play', sans-serif;
 			color: #000;
@@ -67,24 +82,32 @@
 		<div id="foto-perfil">
 			<img src="fotoSobre1.png" id="perfil">
 		</div>
-		<h1>
-			Vandeilton Lima
-		</h1>
-		<a href="https://github.com/vandeiltond3" class="github">github
-			
-		</a>
-		<a href="https://www.linkedin.com/in/vandeilton-lima-0b21b9248/" class="linkedin">linkedin
-			
-		</a>
-		<a class="insta" href="https://www.instagram.com/vandeiltonlimaadvento/" target="_blank" rel="noopener noreferer">insta
-			
-		</a>
-		<a href="https://www.youtube.com/channel/UCT4_yKMFjCL-EGfYp-vEVzw" class="youtube">youtube
-			
-		</a>
-		<a href="vandeiltond3.github.io/portfolio/" class="portfolio">portfolio
-			
-		</a>
+		<div id="titulo">
+			<h1>
+				Vandeilton Lima
+			</h1>
+		</div>
+		<nav>
+			<ul>
+				<li>
+					<a href="https://github.com/vandeiltond3" class="github">github
+					
+					</a>
+					<a href="https://www.linkedin.com/in/vandeilton-lima-0b21b9248/" class="linkedin">linkedin
+					
+					</a>
+					<a class="insta" href="https://www.instagram.com/vandeiltonlimaadvento/" target="_blank" rel="noopener noreferer">insta
+					
+					</a>
+					<a href="https://www.youtube.com/channel/UCT4_yKMFjCL-EGfYp-vEVzw" class="youtube">youtube
+					
+					</a>
+					<a href="vandeiltond3.github.io/portfolio/" class="portfolio">portfolio
+					
+					</a>
+				</li>
+			</ul>
+		</nav>
 	</main>
 </body>
 </html>
