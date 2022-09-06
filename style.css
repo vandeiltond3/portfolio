@@ -371,7 +371,7 @@ div.projeto4{
 	justify-content: center;
 }
 
-div.projeto1 img{
+div#project img{
 	height: 200px;
 	width: 300px;
 }
