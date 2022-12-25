@@ -330,14 +330,13 @@ img{
 
 .container-projetos{
 	display: flex;
-	align-items: center;
 	justify-content: center;
 	flex-wrap: wrap;
+	background-color: green;
 }
 
 .titulo-projet{
-	display: flex;
-	justify-content: center;
+	text-align: center;
 }
 
 .Habilidades{
@@ -357,10 +356,16 @@ div.projeto1,
 div.projeto2,
 div.projeto3,
 div.projeto4{
-	background-color: #fff;
 	height: 200px;
 	width: 300px;
 	margin: 10px;
+	text-align: center;
+	border-radius: 8px;
+	color: #d2bdff;
+}
+
+#project img {
+	border-radius: 8px;
 }
 
 .sub-container{
@@ -390,11 +395,7 @@ footer {
 	justify-content: center;
 }
 
-footer > h3 {
-	color: #fff;
-}
-
-footer > img {
+footer > a > img {
 	height: 40px;
 	border-radius: 50%;
 }
