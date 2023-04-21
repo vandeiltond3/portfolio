@@ -18,7 +18,7 @@ html{
 }
 
 body{
-	background-image: linear-gradient(to top, #FC0183 10%, #D000CE 0.5%, #000);
+	background-color: #101010;
 }
 
 .cabecalho{
@@ -65,6 +65,12 @@ body{
 .cabecalho-menu-item:hover{
 	color: #03e9f4;
 }
+
+
+
+			/*INICIO*/
+
+
 
 .inicio{
 	display: flex;
@@ -141,9 +147,35 @@ h2{
 	margin-left: 5px;
 }
 
-img{
+.sobre-mim img{
 	height: 420px;
 	margin-right: 15px;
+}
+
+.inicio-img{
+	height: 300px;
+	border-radius: 40% 35%;
+	z-index: 10;
+	transform: translate(5px, -10px);
+	transition: 1.5s;
+}
+
+.inicio-img:hover{
+	transform: scale(1.1);
+	border-radius: 50% 30%;
+}
+
+.bolha{
+	width: 400px;
+	height: 300px;
+	z-index: 8;
+	transition: 1.5s;
+	border-radius: 100px 100% 70px 50%;
+	background-image: linear-gradient(125.31deg, #f2015b 0%, #ed02f1 47.92%, #04038d 100%);
+}
+
+.bolha:hover{
+	border-radius: 100px 70% 70px 30%;
 }
 
 @media(max-width: 880px){
@@ -168,8 +200,17 @@ img{
 		font-size: 20px;
 	}
 
-	img{
+	.sobre-mim img{
 		height: 50vh;
+	}
+
+	.inicio-img{
+		height: 40vh;
+	}
+
+	.bolha{
+		height: 40vh;
+		width: 50vw;
 	}
 }
 
@@ -264,16 +305,22 @@ img{
 	}
 }
 
+
+		/*SOBRE MIM*/
+
+
+
 .sobre-mim{
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
 	min-height: 100vh;
-	background-image: url(fundo.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
+	background-color: #000000;
 	padding-top: 62px;
+	width: 90%;
+	margin: 0 auto;
+	border-radius: 8px 8px 0px 0px;
 }
 
 .sobre-escrito{
@@ -323,9 +370,10 @@ img{
 
 .Projetos{
 	min-height: 100vh;
-	background-image: url(technology-67.jpg);
 	background-size: cover;
 	padding-top: 62px;
+	width: 95%;
+	margin: 0 auto;
 }
 
 .container-projetos{
@@ -338,13 +386,21 @@ img{
 	text-align: center;
 }
 
+.titulo-projetos{
+	color: #eeeeee;
+}
+
 .Habilidades{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	min-height: 100vh;
-	background-image: linear-gradient(to bottom, #4B0061, #000000);
+	height: 90vh;
+	background-color: #000000;
 	padding-top: 62px;
+	width: 90%;
+	margin: 0 auto;
+	border-radius: 8px;
+	margin-bottom: 30px;
 }
 
 .jsimg{
@@ -355,12 +411,13 @@ div.projeto1,
 div.projeto2,
 div.projeto3,
 div.projeto4{
-	height: 200px;
-	width: 300px;
+	height: 180px;
+	width: 280px;
 	margin: 10px;
 	text-align: center;
 	border-radius: 8px;
 	color: #d2bdff;
+	background-color: #151515;
 }
 
 #project img {
@@ -376,13 +433,57 @@ div.projeto4{
 }
 
 div#project img{
-	height: 200px;
-	width: 300px;
+	height: 180px;
+	width: 280px;
 }
 
 #project:hover{
 	transform: scale(1.1);
-	transition: 0.5s;
+	transition: 0.3s;
+}
+
+
+
+
+/* HABILIDADES */
+.icones{
+	height: 180px;
+	width: 180px;
+	margin: 10px;
+	border-radius: 8px;
+	background-color: #151515;
+	transition: .3s;
+	color: #ffffff;
+	text-align: center;
+}
+
+.icones:hover{
+	transform: scale(1.1);
+}
+
+.icones img{
+	transform: translate(5px, -170px);
+	transition: .3s;
+	z-index: 2;
+}
+
+.icones img:hover{
+	transform: translateY(-100px);
+}
+
+.icones span{
+	padding-top: 10%;
+	display: block;
+	height: 100%;
+	z-index: 1;
+	font-family: 'Rajdhani', sans-serif;
+	font-size: 20px;
+	font-weight: 700;
+	transition: .3s;
+}
+
+#css-span{
+	transform: translateY(8px);
 }
 
 footer {
@@ -397,4 +498,9 @@ footer {
 footer > a > img {
 	height: 40px;
 	border-radius: 50%;
+}
+
+footer img:hover{
+	transform: scale(1.1);
+	transition: .3s;
 }

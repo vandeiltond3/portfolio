@@ -3,11 +3,12 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=	, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="style.css?v=1">
+	<link rel="stylesheet" type="text/css" href="style.css?v=2">
+	<link rel="stylesheet" type="text/css" href="anime.css?v=1">
 	<title>Portfolio</title>
 </head>
 <body>
-	<header class="cabecalho">		
+	<header class="cabecalho" style="z-index: 999;">
 			<div class="logo">
 				<p class="van">Van</p><p class="lima">Lima</p>
 			</div>
@@ -31,8 +32,8 @@
 	<main>
 		<section class="inicio" id="inicio">
 			<div class="inicio-escrito">
-				<h1>Vandeilton Lima </h1>
-				<h2>Desenvolvedor Front-end</h2>
+				<h1 data-anime="left">Vandeilton Lima </h1>
+				<h2 data-anime="right">Desenvolvedor Front-end</h2>
 				<div class="botoes">
 					<a href="https://www.linkedin.com/in/vandeilton-lima-0b21b9248/" target="_blank">
 						<button class="botao-principal">Linkedin</button>
@@ -42,65 +43,68 @@
 					</a>
 				</div>
 			</div>
-			<img class="inicio-img" src="desenho.png" alt="foto-artistica-vandeilton-lima">
+			<div class="bolha"><img class="inicio-img" src="hacker1.png" onclick="mudaImagem()" alt="foto-artistica-vandeilton-lima"></div>
+			
 		</section>
 
 		<section class="sobre-mim" id="sobre">
-			<img src="fotoSobre1.png" alt="foto-vandeilton-lima">
+			<img src="fotoSobre1.png" alt="foto-vandeilton-lima" data-anime="bottom">
 			<div class="sobre-escrito">
-				<h1 class="sobre-titulo">
+				<h1 class="sobre-titulo" data-anime="right">
 					Sobre mim
 				</h1>
-				<p class="sobre-paragrafo">
+				<p class="sobre-paragrafo" data-anime="left">
 					É um prazer recebê-lo em minha página. <br>
 					Comecei estudar programação no segundo trimestre de 2022 <br>
 					por convite de um amigo e estou amando! Não sou designer <br>
 					profissional mas, gosto de criar coisas bonitas, por isso escolhi o front-end.
 				</p>
-				<p class="sobre-paragrafo">
+				<p class="sobre-paragrafo" data-anime="left">
 					<br> Sigo aprendendo de forma autodidata, criando projetos pessoais <br>
-					e em busca da minha primeira oportunidade profissional.
+					E aí, vamos fazer um projetinho?
 				</p>
 			</div>
 		</section>
 
 		<section class="Projetos" id="projetos">
 			<div class="titulo-projet">
-				<h1 class="titulo-projetos">Projetos</h1>
+				<h1 class="titulo-projetos" data-anime="bottom">Projetos</h1>
 			</div>
 
 			<div class="container-projetos">
 				<div class="sub-container">
-					<div class="projeto1" id="project">
+					<div class="projeto1" id="project" data-anime="bottom">
 						<a href="paglinks.html" target="_blank"><img src="projetoLinks.JPG" alt=""></a>
 					</div>
-					<div class="projeto2" id="project">
+					<div class="projeto2" id="project" data-anime="bottom">
 					<a href="https://vandeiltond3.github.io/Projeto-redes-sociais/" target="_blank"><img src="projetoRedesSociais.JPG" alt=""></a>
 					</div>
 				</div>
 				<div class="sub-container">
-					<div class="projeto3" id="project">
-						<a href="https://vandeiltond3.github.io/Projeto-aguia-2/" target="_blank"><img src="projeto-aguia-img.jpg"></a>
+					<div class="projeto3" id="project" data-anime="bottom">
+						<a href="https://vandeiltond3.github.io/Projeto-aguia-2/" target="_blank"><img src="projeto-aguia-img.JPG"></a>
 					</div>
-					<div class="projeto4" id="project">Em breve
-					
+					<div class="projeto4" id="project" data-anime="bottom"><img src="projetoCalc.JPG" alt="imagem de uma calculadora preta em um fundo vermelho">
 					</div>
 				</div>	
 			</div>
 		</section>
 
-		<section class="Habilidades" id="habilidades">
+		<section class="Habilidades" id="habilidades" data-anime="bottom">
 			<div class="icones">
+				<span>HTML5</span>
 				<a target="_blank" href="https://icons8.com/icon/23028/html-5"></a><a target="_blank" href="https://icons8.com">
 					<img src="icons8-html-5.svg" class="jsimg">
 				</a>
 			</div>
 			<div class="icones">
+				<span>javascript</span>
 				<a target="_blank" href="https://icons8.com/icon/106036/logotipo-javascript"></a><a target="_blank" href="https://icons8.com">
 					<img src="icons8-logotipo-javascript.svg" class="jsimg">
 				</a>
 			</div>
 			<div class="icones">
+				<span id="css-span">CSS</span>
 				<a target="_blank" href="https://icons8.com/icon/38272/css3"></a><a target="_blank" href="https://icons8.com">
 					<img src="icons8-css3.svg" class="jsimg">
 				</a>
@@ -109,10 +113,10 @@
 	</main>
 
 	<footer>
-			<a href="https://www.instagram.com/vandeiltonlimaadvento/"><img src="logo-instagram.jpg" alt="logo do instagram"></a>
-			<a href="paglogin.html" style="color: white; font-family: Arial, Helvetica, sans-serif;">Fazer Login</a>
+			<a href="https://www.instagram.com/vandeiltonlimaadvento/"><img src="instagram.png" alt="logo do instagram"></a>
 	</footer>
 
 	<script src="menu.js"></script>
+	<script src="animation.js"></script>
 </body>
 </html>
