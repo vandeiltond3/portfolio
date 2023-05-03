@@ -259,6 +259,8 @@ h2{
 		height: 100vh;
 
 		background-color: #650061;
+		opacity: .8;
+		transition: .5s;
 
 		z-index: 10;
 
@@ -355,10 +357,7 @@ h2{
 }
 
 @media(max-width: 520px){
-	.Habilidades{
-		display: flex;
-		flex-direction: column;
-	}
+	
 
 	.botao-principal,
 	.botao-principal2 {
@@ -390,22 +389,7 @@ h2{
 	color: #eeeeee;
 }
 
-.Habilidades{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 90vh;
-	background-color: #000000;
-	padding-top: 62px;
-	width: 90%;
-	margin: 0 auto;
-	border-radius: 8px;
-	margin-bottom: 30px;
-}
 
-.jsimg{
-	height: 25vh;
-}
 
 div.projeto1,
 div.projeto2,
@@ -446,44 +430,61 @@ div#project img{
 
 
 /* HABILIDADES */
+
+
+.Habilidades{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	background-color: #000000;
+	width: 90%;
+	margin: 0 auto;
+	border-radius: 8px;
+	margin-bottom: 30px;
+}
+
+.jsimg{
+	height: 90%;
+}
+
 .icones{
-	height: 180px;
-	width: 180px;
+	height: 100px;
+	width: 100px;
 	margin: 10px;
 	border-radius: 8px;
 	background-color: #151515;
 	transition: .3s;
-	color: #ffffff;
+	color: #151515;
 	text-align: center;
 }
 
 .icones:hover{
 	transform: scale(1.1);
+	color: #ffffff;
 }
 
 .icones img{
-	transform: translate(5px, -170px);
+	transform: translate(3px, -13px);
 	transition: .3s;
 	z-index: 2;
 }
 
 .icones img:hover{
-	transform: translateY(-100px);
+	transform: translateY(10px);
+	height: 70px;
 }
 
 .icones span{
 	padding-top: 10%;
 	display: block;
+	opacity: 0;
 	height: 100%;
 	z-index: 1;
 	font-family: 'Rajdhani', sans-serif;
-	font-size: 20px;
+	font-size: 1rem;
 	font-weight: 700;
 	transition: .3s;
-}
-
-#css-span{
-	transform: translateY(8px);
 }
 
 footer {
